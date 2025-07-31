@@ -25,13 +25,14 @@ export default function Navbar() {
 
   return (
     <nav className="flex m-4 dark:bg-white/30 bg-gray-800/30 fixed w-[calc(_100%_-_2rem_)] justify-between items-center p-4 rounded-lg backdrop-blur-md shadow-[0_0_2px_#686464]">
-      <div className="flex w-full gap-4 items-center bg-gray-800/30">
+      <div className="flex w-full gap-4 items-center">
 
-        <span>Settings</span>
+        <span className='cursor-pointer' onClick={() => router.push('/')}>Home</span>
+        <span className='cursor-pointer'>Settings</span>
         {signedIn ?
-          <span className='bg-blue-400'><span onClick={() => logOut()}>Log Out</span><span onClick={() => router.push('/admin')}>Admin</span></span> :
+          <span className='cursor-pointer'><span onClick={() => logOut()}>Log Out</span><span onClick={() => router.push('/admin')}>Admin</span></span> :
           <>
-            <span onClick={() => router.push('/login')}>Sign In</span>
+            <span className='cursor-pointer' onClick={() => router.push('/login')}>Sign In</span>
           </>
         }
 

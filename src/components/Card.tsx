@@ -62,6 +62,8 @@ function Card({ admin, student }: CardProps) {
                     <Image
                         src={student.image.toString()}
                         alt={student.name.toString()}
+                        width={96}
+                        height={96}
                         className="w-full aspect-square"
                     />
                 ) : (

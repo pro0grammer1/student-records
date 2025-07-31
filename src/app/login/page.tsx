@@ -29,8 +29,8 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-black text-white flex items-center justify-center">
-      <div className='rounded font-nunito bg-red-400/50 text-white'>⚠︎ Admin user login credentials for test app are:<br/> Email: admin@email.com<br/>Password: abcd1234</div>
+    <div className="min-h-screen bg-black text-white flex flex-col gap-4 items-center justify-center">
+      <div className='rounded font-nunito p-2 bg-red-400/50 text-white'>⚠︎ Admin user login credentials for test app are:<br/> Email: admin@email.com<br/>Password: abcd1234</div>
             
       <form onSubmit={handleLogin} className="bg-gray-900 p-6 rounded-lg w-80 shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-center">Log In</h2>
