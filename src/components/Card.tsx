@@ -53,7 +53,7 @@ function Card({ admin, student }: CardProps) {
         <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:border-white/40 transition-all duration-300 hover:transform hover:scale-105 relative">
             {admin && (
                 <span className="" onClick={() => funcDelete}>
-                    <Image src='/delete.svg' alt='delete'></Image>
+                    <Image height={5} width={5} src='/delete.svg' alt='delete'></Image>
                 </span>
             )}
 
@@ -62,9 +62,7 @@ function Card({ admin, student }: CardProps) {
                     <Image
                         src={student.image.toString()}
                         alt={student.name.toString()}
-                        width={96}
-                        height={96}
-                        className="w-full h-full object-cover"
+                        className="w-full aspect-square"
                     />
                 ) : (
                     <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-400 to-purple-500 text-white text-2xl font-bold">
