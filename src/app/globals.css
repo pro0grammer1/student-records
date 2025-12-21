@@ -1,9 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap") layer(utilities);
 @import "tailwindcss";
-@import "tailwindcss/preflight";
-@tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-
-:root { 
+:root {
   --background: #ffffff;
   --foreground: 171717;
   --font-nunito: "Nunito Sans", sans-serif;
